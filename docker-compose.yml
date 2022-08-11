@@ -11,9 +11,13 @@ services:
       - mongo
     volumes:
       - .:/app
+      - data:/tmp/data
 
   mongo:
     container_name: adminmongodb
     image: mongo
     ports:
       - '27017:27017'
+
+volumes:
+  data: {}

@@ -17,5 +17,9 @@ RUN npm install -g forever
 
 COPY . ./
 EXPOSE 8080
-CMD [ "npm", "run", "dev" ]
-# CMD forever --minUptime 10000 --spinSleepTime 30000 -c "npm start" ./
+
+CMD [ "npm", "run", "dev" ] 
+
+# Dev ^
+
+# CMD forever --minUptime 10000 --spinSleepTime 30000 -c "npm start" ./ #Production
