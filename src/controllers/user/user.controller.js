@@ -1,14 +1,14 @@
 import mongoose from 'mongoose';
 
-import { User, UserReport, Friend, Notification, UserBlock, GroupMember } from '../../../models';
-import { successResponse, errorResponse } from '../../../helpers';
+import { User, UserReport, Friend, Notification, UserBlock, GroupMember } from '../../models';
+import { successResponse, errorResponse } from '../../helpers';
 import {
   FRIEND_STATUS,
   NOTIFICATION_TYPE,
   NOTIFICATION_LABEL,
   USER_STATUS,
   NOTIFICATION_TYPE_ID,
-} from '../../../constants';
+} from '../../constants';
 import AuthService from '../../../services/auth';
 import FirebaseAdminService from '../../../services/firebaseadmin';
 import TwilioService from '../../../services/twilio';

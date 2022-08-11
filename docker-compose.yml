@@ -9,6 +9,8 @@ services:
       - '8080:8080'
     links:
       - mongo
+    volumes:
+      - .:/app
 
   mongo:
     container_name: adminmongodb

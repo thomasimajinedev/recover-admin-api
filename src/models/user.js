@@ -10,19 +10,49 @@ const UserSchema = new Schema(
       unique: true,
       required: true,
     },
+    password: {
+      type: String,
+    },
     picture: {
       type: String,
     },
-    cover: {
-      type: String,
-    },
-    name: {
-      type: String,
-    },
     birthDate: {
-      type: Date,
+      type: String,
     },
     phoneNumber: {
+      type: String,
+    },
+    role: {
+      type: String,
+    },
+    firstName: {
+      type: String,
+    },
+    middleName: {
+      type: String,
+    },
+    lastName: {
+      type: String,
+    },
+    genderIdentity: {
+      type: String,
+    },
+    genderBiological: {
+      type: String,
+    },
+    state: {
+      type: String,
+    },
+    city: {
+      type: String,
+    },
+    address: {
+      type: String,
+    },
+    apartment: {
+      type: String,
+    },
+    zipcode: {
       type: String,
     },
 

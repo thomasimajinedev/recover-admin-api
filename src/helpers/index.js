@@ -6,7 +6,6 @@ export const successResponse = (req, res, data, code = 200) =>
   });
 
 export const errorResponse = (req, res, error, code = 500) => {
-  SentryService.captureException(error);
   return res.status(code).json({
     errorMessage: error.message,
     data: null,
