@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: adminapi
+    restart: unless-stopped
+    build: .
+    ports:
+      - '8080:8080'
+    links:
+      - mongo
+
+  mongo:
+    container_name: adminmongodb
+    image: mongo
+    ports:
+      - '27017:27017'

@@ -3,7 +3,7 @@ import config from '../config';
 
 module.exports = async () => {
   const { username, password, database, host } = config;
-  const uri = `mongodb+srv://${username}:${password}@${host}/${database}?retryWrites=true&w=majority`;
+  const uri = `mongodb://mongo/${database}?retryWrites=true&w=majority`;
 
   try {
     await mongoose.connect(uri);
