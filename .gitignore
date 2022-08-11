@@ -1,0 +1,10 @@
+.env
+.env.test
+node_modules/
+public/node_modules
+coverage
+yarn-error.log
+.DS_Store
+documentation/
+csvFiles/
+files/
